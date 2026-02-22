@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">      
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+             font-family: "Geist", sans-serif;
+             background-color: #F8FAFC;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hellow Mr. Mehedi</h1>
+
+<body class="w-[90%] mx-auto">
+    <header class="mt-14">
+        <h1 class="text-3xl font-bold text-[#002C5C] ">Job Application Tracker</h1>
+        <div class="mt-5 grid grid-col-1 lg:grid-cols-3 gap-4">
+            <div class="p-5 bg-[#FFFFFF] border border-[#F1F2F4]">
+                <p class="text-[#323B49] text-[14px] font-medium">Total</p>
+                <p id="total-counting" class="text-2xl text-[#002C5C] font-bold">0</p>
+            </div>
+            <div class="p-5 bg-[#FFFFFF] border border-[#F1F2F4]">
+                <p class="text-[#323B49] text-[14px] font-medium">Interview</p>
+                <p id="interview-counting" class="text-2xl text-[#10B981] font-bold">0</p>
+            </div>
+            <div class="p-5 bg-[#FFFFFF] border border-[#F1F2F4]">
+                <p class="text-[#323B49] text-[14px] font-medium">Rejected</p>
+                <p id="rejected-counting" class="text-2xl text-[#EF4444] font-bold">0</p>
+            </div>
+        </div>
+    </header>
+
+    <hr class="my-7 text-[#E6E7E9]">
+
+    <main>
+        <section>
+            
+        </section>
+    </main>
+
 </body>
+
 </html>
