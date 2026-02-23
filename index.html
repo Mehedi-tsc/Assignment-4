@@ -44,12 +44,12 @@
         <section class="space-y-6 mb-4">
             <div class="flex justify-between">
                 <h2 class="font-semibold text-[#111827] text-xl">Available Jobs</h2>
-                <p class="text-[#323B49] text-[1rem] font-medium"><span id="job-counting">8</span> jobs</p>
+                <p class="text-[#323B49] text-[1rem] font-medium"><span id="job-counting">0</span> jobs</p>
             </div>
             <div class="space-x-2">
-                <button id="all-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#FFFFFF] bg-[#3B82F6] border border-[#000000]">All</button>
-                <button id="interview-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#64748B] bg-[#FFFFFF] border border-[#F1F2F4]">Interview</button>
-                <button id="rejected-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#64748B] bg-[#FFFFFF] border border-[#F1F2F4]">Rejected</button>
+                <button onclick="toggleStyle('all-btn')" id="all-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#FFFFFF] bg-[#3B82F6] border border-[#000000]">All</button>
+                <button onclick="toggleStyle('interview-btn')" id="interview-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#64748B] bg-[#FFFFFF] border border-[#F1F2F4]">Interview</button>
+                <button onclick="toggleStyle('rejected-btn')" id="rejected-btn" class="w-[80px] py-[10px] text-center text-xs font-medium text-[#64748B] bg-[#FFFFFF] border border-[#F1F2F4]">Rejected</button>
             </div>
         </section>
 
@@ -62,10 +62,10 @@
             <div id="card-1" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">Mobile First Corp</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">Mobile First Corp</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">React Native Developer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Remote  •  Full-time  •  $130,000 - $175,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -86,10 +86,10 @@
             <div id="card-2" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">WebFlow Agency</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">WebFlow Agency</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">Web Designer & Developer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Los Angeles, CA  •  Part-time  •  $80,000 - $120,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -110,10 +110,10 @@
             <div id="card-3" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">DataViz Solutions</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">DataViz Solutions</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">Data Visualization Specialist</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Boston, MA  •  Full-time  •  $125,000 - $165,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -134,10 +134,10 @@
             <div id="card-4" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">CloudFirst Inc</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">CloudFirst Inc</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">Backend Developer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Seattle, WA  •   Full-time  •  $140,000 - $190,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -158,10 +158,10 @@
             <div id="card-5" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">Innovation Labs</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">Innovation Labs</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">UI/UX Engineer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Austin, TX  •   Full-time  •  $110,000 - $150,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -182,10 +182,10 @@
             <div id="card-6" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">MegaCorp Solutions</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">MegaCorp Solutions</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">JavaScript Developer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">New York, NY  •  Full-time  •  $130,000 - $170,00</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -206,10 +206,10 @@
             <div id="card-7" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">StartupXYZ</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">StartupXYZ</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">Full Stack Engineer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">Remote  •  Full-time  •  $120,000 - $160,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -230,10 +230,10 @@
             <div id="card-8" class="p-6 bg-[#FFFFFF] border border-[#F1F2F4] rounded-lg lg:flex justify-between">
                <!-- Main part -->
                 <div>
-                        <h3 class="text-xl font-semibold text-[#002C5C] mb-1">TechCorp Industries</h3>
+                        <h3 class="company-name text-xl font-semibold text-[#002C5C] mb-1">TechCorp Industries</h3>
                         <p class="text-[1rem] leading-5 text-[#64748B]">Senior Frontend Developer</p>
                         <p class="my-[20px] text-[14px] leading-5 text-[#64748B]">San Francisco, CA  •  Full-time  •   $130,000 - $175,000</p>
-                        <button id="status" class="text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
+                        <button class="status text-[14px] font-medium text-[#002C5C] bg-[#EEF4FF] px-3 py-2 rounded mb-2">NOT APPLIED</button>
                         <p class="text-[14px] text-[#323B49] mb-5">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                         <div class="">
                             <button class="interview text-[14px] text-[#10B981] font-semibold border border-[#10B981] rounded px-3 py-2">INTERVIEW</button>
@@ -266,6 +266,7 @@
 
     </main>
 
+<script src="script.js"></script>
 </body>
 
 </html>
