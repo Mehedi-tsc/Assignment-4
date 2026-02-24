@@ -92,7 +92,7 @@ mainPart.addEventListener('click', function(event){
             status: 'INTERVIEW',
             description
         };
-        const existCompany = interviewList.find(item => item.companyName==cardInfo.companyName);
+        const existCompany = interviewList.find(item => item.companyName.innerText==cardInfo.companyName.innerText);
         if(!existCompany){
             interviewList.push(cardInfo);
         }
@@ -125,7 +125,7 @@ mainPart.addEventListener('click', function(event){
             description
         };
 
-        const existCompany = rejectedList.find(item => item.companyName==cardInfo.companyName);
+        const existCompany = rejectedList.find(item => item.companyName.innerText==cardInfo.companyName.innerText);
         if(!existCompany){
             rejectedList.push(cardInfo);
         }
