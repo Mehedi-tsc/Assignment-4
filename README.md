@@ -11,7 +11,7 @@
 2. How do you create and insert a new element into the DOM?
 
    Ans: 
-   At first I create a new element by using "document.createElement('element name');" then select the parent by its id/class/tag and append the created element in the tageted parent by using 
+   At first I create a new element by using "document.createElement('element name');" then select the parent by its id/class/tag and append the created element in the targeted parent by using 
    "parent.appenChild('created element');"
 
 
@@ -20,7 +20,7 @@
     Ans: 
     When someone click the button the click event does not stay on the button. It travels upward to the parent then to the grandparant and so on until it reaches the last parent. It's called Event Bubbling.
 
-If someone click an inner element, at firts the inner element's event runs then the parent's even runs then the grandparent's event runs and so on.
+    If someone click an inner element, at firts the inner element's event runs then the parent's event runs then the grandparent's event runs and so on.
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 
