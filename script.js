@@ -138,6 +138,12 @@ mainPart.addEventListener('click', function(event){
         }
         calculateCounting();
     }
+    else if(event.target.classList.contains('delete')){
+        const parenNode = event.target.parentNode.parentNode;
+        parenNode.remove();
+        calculateCounting();
+        jobCounting.innerText = cardContainer.children.length;
+    }
 
 });
 
