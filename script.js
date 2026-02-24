@@ -100,9 +100,10 @@ mainPart.addEventListener('click', function(event){
         if(currentStatus==='rejected-btn' && rejectedCounting.innerText==1){
             renderRejected();
              interviewOrRejected.classList.remove('hidden');
+             jobCounting.innerText = rejectedList.length;
         }else if(currentStatus==='rejected-btn'){
              renderRejected();
-             jobCounting.innerText = interviewList.length;
+             jobCounting.innerText = rejectedList.length;
         }
         calculateCounting();
         
@@ -133,8 +134,10 @@ mainPart.addEventListener('click', function(event){
         if(currentStatus==='interview-btn'&& interviewCounting.innerText==1){
             renderInterview();
             interviewOrRejected.classList.remove('hidden');
+            jobCounting.innerText = interviewList.length;
         }else if(currentStatus==='interview-btn'){
             renderInterview();
+            jobCounting.innerText = interviewList.length;
         }
         calculateCounting();
     }
